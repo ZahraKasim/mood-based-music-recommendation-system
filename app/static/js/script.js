@@ -63,6 +63,7 @@ let listHTML = "<ul class='songs-list'>";
                         currentIndex = index;
                         playBtn.classList.remove("bi-play-fill");
                         playBtn.classList.add("bi-pause-fill");
+                        pulse.classList.add('active2');
                     }
                 });
             });
@@ -70,15 +71,18 @@ let listHTML = "<ul class='songs-list'>";
     });
 
     // --- Play/Pause button ---
+    let pulse = document.getElementsByClassName('pulse')[0];
     playBtn.addEventListener("click", () => {
         if(player.paused){
             player.play();
             playBtn.classList.remove("bi-play-fill");
             playBtn.classList.add("bi-pause-fill");
+            pulse.classList.add('active2');
         } else {
             player.pause();
             playBtn.classList.remove("bi-pause-fill");
             playBtn.classList.add("bi-play-fill");
+            pulse.classList.remove('active2');
         }
     });
 
