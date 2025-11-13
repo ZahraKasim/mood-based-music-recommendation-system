@@ -77,19 +77,19 @@ h3,
 /* Specific positioning for the heading */
 .topic{
   display: block;
-  inline-size: 50%;
-  block-size: 10%;
-  top: 19%;
-  left: 63%;
+  inline-size: 80%;
+  block-size: 20%;
+  top: 23%;
+  left: 62%;
   transform: translateX(-50%);
   position: absolute;
-  text-align: left;
+  text-align: center;
   /*border: 1px solid #fff;*/
 
-  font-family: 'Great Vibes',Cursive;
-  font-size: 55px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 50px;
   font-weight: 500;
-  color: #06402B; /* silver base */
+  color: #fff; /* silver base */
   text-shadow:
     0 0 10px #ffffff,
     0 0 20px #d9d9d9,
@@ -99,7 +99,10 @@ h3,
   letter-spacing: 2px;
   animation: shine 3s infinite alternate ease-in-out;
 }
-
+.topic i {
+  color: #36e2ec;
+  margin-right: 10px;
+}
 @keyframes shine {
   0% {
     text-shadow:
